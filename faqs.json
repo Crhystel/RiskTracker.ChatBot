@@ -1,0 +1,124 @@
+{
+  "preguntas_frecuentes": [
+    {
+      "pregunta": "¿Quiénes desarrollaron esta metodología?",
+      "respuesta": "Fue desarrollada por tres estudiantes de la universidad: Yuliana, Soledad y Crhystel."
+    },
+    {
+      "pregunta": "¿Cuál es el objetivo principal de esta metodología?",
+      "respuesta": "El objetivo principal es cuantificar el riesgo de ciberseguridad en términos financieros (USD) para los activos digitales de una organización, con el fin de priorizar riesgos, justificar inversiones y facilitar la toma de decisiones."
+    },
+    {
+      "pregunta": "¿Qué es la Pérdida Anual Esperada (ALE) y por qué es importante?",
+      "respuesta": "La Pérdida Anual Esperada (ALE) es una estimación en dinero (USD) de cuánto se espera perder anualmente a causa de incidentes de seguridad en un activo específico. Es la métrica final de riesgo que permite priorizar objetivamente."
+    },
+    {
+      "pregunta": "¿Qué es un Activo Digital de Negocio según el texto?",
+      "respuesta": "Es cualquier componente de software, datos o infraestructura cuya degradación o compromiso resulta en un impacto económico medible para la organización."
+    },
+    {
+      "pregunta": "¿Por qué un repositorio de código fuente es considerado un activo valioso?",
+      "respuesta": "Porque contiene la propiedad intelectual más valiosa de la empresa. Una fuga puede exponer algoritmos de negocio, vulnerabilidades y credenciales, permitiendo a un atacante planificar un ataque con conocimiento total del sistema."
+    },
+    {
+      "pregunta": "¿Qué diferencia hay entre un Data Warehouse y un Data Lake?",
+      "respuesta": "Un Data Warehouse almacena datos históricos y actuales, estructurados y limpios para análisis. Un Data Lake es un repositorio masivo que almacena todo tipo de datos, incluyendo datos no estructurados o 'en crudo'."
+    },
+    {
+      "pregunta": "¿Con qué marco normativo está alineada esta metodología?",
+      "respuesta": "La metodología está diseñada para operacionalizar los requisitos de la Ley Orgánica de Protección de Datos Personales (LOPDP) de Ecuador, su Reglamento General (RGLOPDP), y la “Guía de Gestión de Riesgos y Evaluación de Impacto” asociada."
+    },
+    {
+      "pregunta": "¿Cuáles son los principios fundamentales de esta metodología?",
+      "respuesta": "Los principios son: Cuantificación Financiera (todo se expresa en USD), Reproducibilidad (mismos datos de entrada producen el mismo resultado) y Basado en Datos Reales (las frecuencias e impactos se basan en datos históricos y contables)."
+    },
+    {
+      "pregunta": "¿Para qué sirven los conectores en el proceso de identificación de activos?",
+      "respuesta": "Los conectores son scripts que extraen datos automáticamente de fuentes como Kubernetes, GitHub o Terraform. Facilitan enormemente la identificación de activos, reducen el esfuerzo manual y mantienen el inventario actualizado."
+    },
+    {
+      "pregunta": "¿Por qué es importante el campo 'Ingresos por minuto (USD)' en el esquema de datos de un activo?",
+      "respuesta": "Es fundamental porque ayuda a dimensionar el costo de una interrupción (downtime) y a priorizar qué servicios se deben restaurar primero en caso de un incidente."
+    },
+    {
+      "pregunta": "¿Qué es la Valoración Financiera del Activo (VNA)?",
+      "respuesta": "El VNA es un índice económico que representa el valor estratégico total de un activo para la organización. No es una cifra contable, sino una medida del valor que encapsula."
+    },
+    {
+      "pregunta": "¿Cómo se calcula el VNA?",
+      "respuesta": "El VNA se calcula sumando tres componentes: el Coste Total de Propiedad (CTP), la Pérdida por Downtime (DCR) y el Valor por Flujos de Negocio Críticos (ADI). La fórmula es: VNA = CTP + DCR + ADI."
+    },
+    {
+      "pregunta": "¿Qué es el CTP (Coste Total de Propiedad)?",
+      "respuesta": "Es el valor de reposición del activo. Se calcula sumando los costos anuales de licencias y las horas de desarrollo y soporte multiplicadas por la tarifa del ingeniero."
+    },
+    {
+      "pregunta": "¿Cómo se mide la Sensibilidad Informacional (SI) de un activo?",
+      "respuesta": "La SI es un índice de fragilidad (de 0 a 10) que se calcula a partir de tres componentes: Confidencialidad (C), Integridad (I) y Disponibilidad (D). La fórmula pondera el valor máximo de estos tres y su promedio."
+    },
+    {
+      "pregunta": "¿Cómo se determina la sensibilidad de Confidencialidad (C)?",
+      "respuesta": "Se basa en el número de vulnerabilidades críticas de confidencialidad que están abiertas o no resueltas. Por ejemplo, un bucket S3 público tendría una C máxima."
+    },
+    {
+      "pregunta": "¿Cómo se determina la sensibilidad de Disponibilidad (D)?",
+      "respuesta": "Se calcula en base a los minutos de downtime no planificado que el activo ha tenido en un mes. Un mayor tiempo de inactividad resulta en una mayor sensibilidad de disponibilidad."
+    },
+    {
+      "pregunta": "¿Qué es la Frecuencia de Evento de Pérdida (LEF)?",
+      "respuesta": "LEF es el número promedio de incidentes de seguridad que afectan a un activo por año. Se obtiene contando los incidentes reales ocurridos y registrados en los últimos 12 meses."
+    },
+    {
+      "pregunta": "¿De dónde se obtienen los datos para calcular el LEF de una API?",
+      "respuesta": "Para una API, el LEF se extrae de logs que muestran picos de peticiones anómalas, intentos de enumeración de recursos o explotación de vulnerabilidades específicas de APIs."
+    },
+    {
+      "pregunta": "¿Qué componentes forman la Magnitud de Pérdida (LM)?",
+      "respuesta": "La LM representa el costo de un solo incidente. Se calcula sumando: Pérdida Directa (PD), Pérdida Indirecta (PI), Coste de Respuesta (CR), Exposición Distribuida por PII (DPF) y Exposición por Cumplimiento - Sanción (CES)."
+    },
+    {
+      "pregunta": "¿Cuál es la diferencia entre Pérdida Directa (PD) y Pérdida Indirecta (PI)?",
+      "respuesta": "La Pérdida Directa (PD) es el costo directo por la interrupción del servicio durante un incidente. La Pérdida Indirecta (PI) son los costos secundarios como el daño reputacional o la pérdida de clientes, estimada como un 40% de la PD."
+    },
+    {
+      "pregunta": "¿Cómo se calcula la Pérdida Anual Esperada (ALE)?",
+      "respuesta": "La ALE se calcula multiplicando la Frecuencia de Evento de Pérdida (LEF) por la Magnitud de Pérdida (LM). La fórmula es: ALE = LEF * LM. Es la métrica final de riesgo."
+    },
+    {
+      "pregunta": "¿Cómo se usa la matriz VNA vs SI para una priorización rápida?",
+      "respuesta": "Un activo con alto VNA (muy valioso) y alta SI (muy frágil) representa una 'Alerta Máxima' y requiere atención inmediata. En cambio, un activo con bajo VNA y baja SI es de 'Bajo Riesgo'."
+    },
+    {
+      "pregunta": "¿Qué es el Retorno de la Inversión en Seguridad (ROSI) y para qué sirve?",
+      "respuesta": "El ROSI es una métrica financiera que evalúa la rentabilidad de una inversión en seguridad. Sirve para justificar presupuestos, demostrar que la seguridad es una inversión estratégica y no un costo, y para priorizar qué controles implementar."
+    },
+    {
+      "pregunta": "¿Cómo se calcula el ROSI?",
+      "respuesta": "La fórmula es: ROSI (%) = ((ALE_Inicial - ALE_Residual) - Costo_del_control) / Costo_del_control * 100."
+    },
+    {
+      "pregunta": "¿Qué significa un ROSI del 166%?",
+      "respuesta": "Un ROSI del 166% significa que por cada dólar invertido en el control de seguridad, la compañía espera recuperar ese dólar y obtener $1.66 adicionales en forma de pérdidas evitadas. Es una inversión altamente rentable."
+    },
+    {
+      "pregunta": "¿Qué es el ALE_Residual?",
+      "respuesta": "Es la estimación de la Pérdida Anual Esperada (ALE) que quedaría después de haber implementado un nuevo control de seguridad. Representa el riesgo restante."
+    },
+    {
+      "pregunta": "¿Cuáles son las cuatro estrategias para el tratamiento del riesgo?",
+      "respuesta": "Las estrategias son: Mitigar (implementar controles), Transferir (contratar un ciberseguro), Evitar (eliminar el activo o proceso) y Aceptar (asumir el riesgo conscientemente)."
+    },
+    {
+      "pregunta": "¿Qué es PII y por qué es importante?",
+      "respuesta": "PII es Información de Identificación Personal (nombres, cédulas, correos). Es importante porque su manejo está regulado por ley y una fuga de estos datos puede acarrear sanciones económicas y daño reputacional."
+    },
+    {
+      "pregunta": "¿Qué es un microservicio?",
+      "respuesta": "Es un enfoque de arquitectura donde una aplicación grande se divide en muchos servicios pequeños e independientes. Cada uno cumple una única función de negocio, lo que los hace más fáciles de mantener y escalar."
+    },
+    {
+      "pregunta": "¿Qué es Kubernetes?",
+      "respuesta": "Es una plataforma para automatizar el despliegue, escalado y gestión de aplicaciones en contenedores. Se le considera el 'sistema operativo' del centro de datos moderno, ya que orquesta cómo y dónde se ejecutan las aplicaciones."
+    }
+  ]
+}
