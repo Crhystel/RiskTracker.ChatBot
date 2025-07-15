@@ -1,0 +1,14 @@
+services:
+  chatbot:
+    container_name: riskracker-chatbot
+    build: .
+
+    restart: unless-stopped
+    volumes:
+      - ./faqs.json:/app/faqs.json
+    networks:
+      - risktrackerdocker_kong-net
+
+networks:
+  risktrackerdocker_kong-net:
+    external: true

@@ -1,7 +1,47 @@
 [
   {
+    "question": "Hola",
+    "answer": "¡Hola! Soy tu asistente virtual. Estoy aquí para resolver cualquier duda que tengas sobre la Metodología de Riesgo de Activos Digitales. ¿En qué puedo ayudarte?"
+  },
+  {
+    "question": "Buenos días",
+    "answer": "¡Buenos días! Soy el asistente de la plataforma. Puedo ayudarte con preguntas sobre la metodología de riesgo. ¿Tienes alguna consulta?"
+  },
+  {
+    "question": "Buenas tardes",
+    "answer": "¡Buenas tardes! Estoy a tu disposición para responder preguntas sobre cómo cuantificar y gestionar el riesgo de tus activos digitales. ¡Pregúntame lo que necesites!"
+  },
+  {
+    "question": "¿Cómo estás?",
+    "answer": "Como modelo de IA, ¡estoy siempre listo para ayudar! Mi propósito es darte información clara y precisa sobre la metodología de riesgo. ¿Qué te gustaría saber?"
+  },
+  {
+    "question": "¿Quién eres?",
+    "answer": "Soy un asistente virtual entrenado para responder preguntas sobre la Metodología de Riesgo de Activos Digitales implementada en esta plataforma."
+  },
+  {
+    "question": "¿Qué puedes hacer?",
+    "answer": "Puedo responder preguntas sobre los conceptos, fórmulas y procesos de la Metodología de Riesgo de Activos Digitales. También puedo guiarte sobre cómo usar la plataforma dependiendo si eres un administrador o un usuario."
+  },
+  {
+    "question": "¿Cómo ingreso si soy administrador?",
+    "answer": "Como administrador, debes usar el correo electrónico proporcionado por el equipo que te vendió el programa para iniciar sesión. Una vez dentro, tendrás permisos para gestionar la plataforma."
+  },
+  {
+    "question": "¿Qué puede hacer un administrador?",
+    "answer": "El rol de administrador está diseñado para la gestión general. Tu principal función es crear y administrar las cuentas de los usuarios que utilizarán la plataforma para analizar los activos."
+  },
+  {
+    "question": "¿Cómo ingreso si soy un usuario?",
+    "answer": "Como usuario, tu administrador debió haber creado una cuenta para ti. Debes iniciar sesión con esas credenciales. Al ingresar, tendrás acceso a todas las herramientas para el análisis de riesgo."
+  },
+  {
+    "question": "¿Qué puedo hacer como usuario?",
+    "answer": "Como usuario, tienes el control total sobre el ciclo de vida del riesgo. Puedes registrar los activos digitales de tu organización, crear equipos de trabajo, registrar los incidentes de seguridad que ocurran y, lo más importante, usar la calculadora de Retorno de la Inversión (ROSI) para ver si una inversión en seguridad es rentable."
+  },
+  {
     "question": "¿Quiénes desarrollaron esta metodología?",
-    "answer": "Fue desarrollada por tres estudiantes de la universidad: Yuliana, Soledad y Crhystel."
+    "answer": "Fue desarrollada por tres estudiantes de la Universidad de las Américas: Yuliana Capito, Soledad Cabrera y Crhystel Velasco, como parte de su proyecto en la materia de Seguridad Informática."
   },
   {
     "question": "¿Cuál es el objetivo principal de esta metodología?",
@@ -9,11 +49,15 @@
   },
   {
     "question": "¿Qué es la Pérdida Anual Esperada (ALE) y por qué es importante?",
-    "answer": "La Pérdida Anual Esperada (ALE) es una estimación en dinero (USD) de cuánto se espera perder anualmente a causa de incidentes de seguridad en un activo específico. Es la métrica final de riesgo que permite priorizar objetivamente."
+    "answer": "La Pérdida Anual Esperada (ALE) es una estimación en dinero (USD) de cuánto se espera perder anualmente a causa de incidentes de seguridad en un activo específico. Es la métrica final y más importante de riesgo porque permite comparar activos y priorizar objetivamente."
   },
   {
     "question": "¿Qué es un Activo Digital de Negocio según el texto?",
     "answer": "Es cualquier componente de software, datos o infraestructura cuya degradación o compromiso resulta en un impacto económico medible para la organización."
+  },
+    {
+    "question": "Dame ejemplos de activos de software",
+    "answer": "Claro, los activos de software incluyen: Aplicaciones Web (frontend y backend), APIs (REST, GraphQL), Microservicios, Librerías internas y Repositorios de código fuente como Git."
   },
   {
     "question": "¿Por qué un repositorio de código fuente es considerado un activo valioso?",
@@ -36,12 +80,12 @@
     "answer": "Los conectores son scripts que extraen datos automáticamente de fuentes como Kubernetes, GitHub o Terraform. Facilitan enormemente la identificación de activos, reducen el esfuerzo manual y mantienen el inventario actualizado."
   },
   {
-    "question": "¿Por qué es importante el campo 'Ingresos por minuto (USD)' en el esquema de datos de un activo?",
-    "answer": "Es fundamental porque ayuda a dimensionar el costo de una interrupción (downtime) y a priorizar qué servicios se deben restaurar primero en caso de un incidente."
+    "question": "¿Por qué es importante el campo 'Ingresos por minuto (USD)'?",
+    "answer": "Es fundamental porque ayuda a dimensionar el costo de una interrupción (downtime) y a priorizar qué servicios se deben restaurar primero en caso de un incidente. Es la base para calcular la Pérdida por Downtime (DCR)."
   },
   {
     "question": "¿Qué es la Valoración Financiera del Activo (VNA)?",
-    "answer": "El VNA es un índice económico que representa el valor estratégico total de un activo para la organización. No es una cifra contable, sino una medida del valor que encapsula."
+    "answer": "El VNA es un índice económico que representa el valor estratégico total de un activo para la organización. No es una cifra contable, sino una medida del valor inherente que encapsula, sin considerar los riesgos todavía."
   },
   {
     "question": "¿Cómo se calcula el VNA?",
@@ -49,35 +93,51 @@
   },
   {
     "question": "¿Qué es el CTP (Coste Total de Propiedad)?",
-    "answer": "Es el valor de reposición del activo. Se calcula sumando los costos anuales de licencias y las horas de desarrollo y soporte multiplicadas por la tarifa del ingeniero."
+    "answer": "Es el valor de reposición del activo, es decir, cuánto costaría reconstruirlo desde cero. Se calcula sumando los costos anuales de licencias y las horas de desarrollo y soporte multiplicadas por la tarifa del ingeniero."
   },
   {
-    "question": "¿Cómo se mide la Sensibilidad Informacional (SI) de un activo?",
-    "answer": "La SI es un índice de fragilidad (de 0 a 10) que se calcula a partir de tres componentes: Confidencialidad (C), Integridad (I) y Disponibilidad (D). La fórmula pondera el valor máximo de estos tres y su promedio."
+    "question": "¿Qué es la Triada de la Seguridad o CIA?",
+    "answer": "Es el modelo base de la seguridad de la información. Sus tres pilares son: Confidencialidad (asegurar que la información solo sea accesible a personal autorizado), Integridad (asegurar que la información sea precisa y no haya sido modificada) y Disponibilidad (asegurar que los sistemas e información funcionen cuando se necesiten)."
+  },
+  {
+    "question": "¿Qué es la Sensibilidad Informacional (SI) de un activo?",
+    "answer": "La SI es un índice de fragilidad técnica, en una escala de 0 a 10. Mide qué tan propenso a fallar es un activo basado en sus debilidades actuales en Confidencialidad (C), Integridad (I) y Disponibilidad (D)."
+  },
+  {
+    "question": "Explica la fórmula de la Sensibilidad (SI)",
+    "answer": "La fórmula es: SI = 0.5 * max(C, I, D) + 0.5 * (promedio(C, I, D)). Esto significa que se le da un 50% de peso al peor de los tres factores (Confidencialidad, Integridad o Disponibilidad) y un 50% de peso al promedio de los tres, creando un indicador balanceado de la fragilidad."
   },
   {
     "question": "¿Cómo se determina la sensibilidad de Confidencialidad (C)?",
-    "answer": "Se basa en el número de vulnerabilidades críticas de confidencialidad que están abiertas o no resueltas. Por ejemplo, un bucket S3 público tendría una C máxima."
+    "answer": "Se basa en el número de vulnerabilidades críticas de confidencialidad que están abiertas o no resueltas. Por ejemplo, un repositorio con secretos expuestos o un bucket S3 público tendría una C máxima de 10."
   },
   {
     "question": "¿Cómo se determina la sensibilidad de Disponibilidad (D)?",
-    "answer": "Se calcula en base a los minutos de downtime no planificado que el activo ha tenido en un mes. Un mayor tiempo de inactividad resulta en una mayor sensibilidad de disponibilidad."
+    "answer": "Se calcula en base a los minutos de downtime no planificado que el activo ha tenido en un mes. Un mayor tiempo de inactividad resulta en una mayor sensibilidad de disponibilidad. En la fórmula, se escala para que 1.44 horas de downtime al mes ya den una D de 10."
   },
   {
     "question": "¿Qué es la Frecuencia de Evento de Pérdida (LEF)?",
     "answer": "LEF es el número promedio de incidentes de seguridad que afectan a un activo por año. Se obtiene contando los incidentes reales ocurridos y registrados en los últimos 12 meses."
   },
+    {
+    "question": "Si un activo nunca ha tenido un incidente, ¿su LEF es cero?",
+    "answer": "Sí, si en los últimos 12 meses no se ha registrado ningún incidente para ese activo, su LEF sería cero. Sin embargo, es importante considerar si existen amenazas latentes o si la falta de incidentes se debe a suerte y no a buenos controles."
+  },
   {
     "question": "¿De dónde se obtienen los datos para calcular el LEF de una API?",
-    "answer": "Para una API, el LEF se extrae de logs que muestran picos de peticiones anómalas, intentos de enumeración de recursos o explotación de vulnerabilidades específicas de APIs."
+    "answer": "Para una API, el LEF se extrae de logs que muestran picos de peticiones anómalas, intentos de enumeración de recursos o explotación de vulnerabilidades específicas de APIs, así como de tickets de incidentes en sistemas como Jira."
   },
   {
     "question": "¿Qué componentes forman la Magnitud de Pérdida (LM)?",
-    "answer": "La LM representa el costo de un solo incidente. Se calcula sumando: Pérdida Directa (PD), Pérdida Indirecta (PI), Coste de Respuesta (CR), Exposición Distribuida por PII (DPF) y Exposición por Cumplimiento - Sanción (CES)."
+    "answer": "La LM representa el costo de un solo incidente. Se calcula sumando: Pérdida Directa (PD), Pérdida Indirecta (PI), Coste de Respuesta (CR) y los costos relacionados con la fuga de datos personales (DPF y CES)."
   },
   {
     "question": "¿Cuál es la diferencia entre Pérdida Directa (PD) y Pérdida Indirecta (PI)?",
-    "answer": "La Pérdida Directa (PD) es el costo directo por la interrupción del servicio durante un incidente. La Pérdida Indirecta (PI) son los costos secundarios como el daño reputacional o la pérdida de clientes, estimada como un 40% de la PD."
+    "answer": "La Pérdida Directa (PD) es el costo directo por la interrupción del servicio durante un incidente. La Pérdida Indirecta (PI) son los costos secundarios como el daño reputacional o la pérdida de clientes, estimada como un 40% de la PD, basado en estudios de la industria."
+  },
+  {
+    "question": "¿Qué es el Coste de Respuesta (CR)?",
+    "answer": "Es el costo del esfuerzo humano para gestionar y resolver un incidente. Se calcula multiplicando las horas promedio que tarda el equipo de respuesta (CSIRT) en solucionar el problema por la tarifa por hora de ese equipo."
   },
   {
     "question": "¿Cómo se calcula la Pérdida Anual Esperada (ALE)?",
@@ -85,7 +145,7 @@
   },
   {
     "question": "¿Cómo se usa la matriz VNA vs SI para una priorización rápida?",
-    "answer": "Un activo con alto VNA (muy valioso) y alta SI (muy frágil) representa una 'Alerta Máxima' y requiere atención inmediata. En cambio, un activo con bajo VNA y baja SI es de 'Bajo Riesgo'."
+    "answer": "Es una matriz de priorización estratégica. Un activo con alto VNA (muy valioso) y alta SI (muy frágil) representa una 'Alerta Máxima' y requiere atención inmediata. En cambio, un activo con bajo VNA y baja SI es de 'Bajo Riesgo'."
   },
   {
     "question": "¿Qué es el Retorno de la Inversión en Seguridad (ROSI) y para qué sirve?",
@@ -93,30 +153,34 @@
   },
   {
     "question": "¿Cómo se calcula el ROSI?",
-    "answer": "La fórmula es: ROSI (%) = ((ALE_Inicial - ALE_Residual) - Costo_del_control) / Costo_del_control * 100."
+    "answer": "La fórmula es: ROSI (%) = ((ALE Inicial - ALE Residual) - Costo del control) / Costo del control * 100. En palabras simples, es la ganancia neta dividida por la inversión."
   },
   {
     "question": "¿Qué significa un ROSI del 166%?",
     "answer": "Un ROSI del 166% significa que por cada dólar invertido en el control de seguridad, la compañía espera recuperar ese dólar y obtener $1.66 adicionales en forma de pérdidas evitadas. Es una inversión altamente rentable."
   },
+    {
+    "question": "¿Qué significa un ROSI negativo?",
+    "answer": "Un ROSI negativo significa que el costo del control de seguridad es mayor que el ahorro que genera. En ese caso, la inversión no es financieramente rentable y la organización debería considerar otras alternativas o aceptar el riesgo."
+  },
   {
     "question": "¿Qué es el ALE_Residual?",
-    "answer": "Es la estimación de la Pérdida Anual Esperada (ALE) que quedaría después de haber implementado un nuevo control de seguridad. Representa el riesgo restante."
+    "answer": "Es la estimación de la Pérdida Anual Esperada (ALE) que quedaría después de haber implementado un nuevo control de seguridad. Representa el nivel de riesgo restante con el que la organización operaría."
   },
   {
     "question": "¿Cuáles son las cuatro estrategias para el tratamiento del riesgo?",
-    "answer": "Las estrategias son: Mitigar (implementar controles), Transferir (contratar un ciberseguro), Evitar (eliminar el activo o proceso) y Aceptar (asumir el riesgo conscientemente)."
+    "answer": "Las estrategias son: Mitigar (implementar controles para reducir el riesgo), Transferir (contratar un ciberseguro), Evitar (eliminar el activo o proceso que origina el riesgo) y Aceptar (asumir el riesgo conscientemente, generalmente cuando es bajo)."
   },
   {
     "question": "¿Qué es PII y por qué es importante?",
-    "answer": "PII es Información de Identificación Personal (nombres, cédulas, correos). Es importante porque su manejo está regulado por ley y una fuga de estos datos puede acarrear sanciones económicas y daño reputacional."
+    "answer": "PII es Información de Identificación Personal (nombres, cédulas, correos, etc.). Es crucial porque su manejo está regulado por ley (como la LOPDP) y una fuga de estos datos puede acarrear sanciones económicas severas y un gran daño reputacional."
   },
   {
     "question": "¿Qué es un microservicio?",
-    "answer": "Es un enfoque de arquitectura donde una aplicación grande se divide en muchos servicios pequeños e independientes. Cada uno cumple una única función de negocio, lo que los hace más fáciles de mantener y escalar."
+    "answer": "Es un enfoque de arquitectura donde una aplicación grande se divide en muchos servicios pequeños e independientes. Cada uno cumple una única función de negocio, lo que los hace más fáciles de mantener y escalar, como piezas de LEGO."
   },
   {
     "question": "¿Qué es Kubernetes?",
-    "answer": "Es una plataforma para automatizar el despliegue, escalado y gestión de aplicaciones en contenedores. Se le considera el 'sistema operativo' del centro de datos moderno, ya que orquesta cómo y dónde se ejecutan las aplicaciones."
+    "answer": "Es una plataforma de código abierto para automatizar el despliegue, escalado y gestión de aplicaciones en contenedores. Se le considera el 'sistema operativo' del centro de datos moderno, ya que orquesta cómo y dónde se ejecutan las aplicaciones."
   }
 ]
