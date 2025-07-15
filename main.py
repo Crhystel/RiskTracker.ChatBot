@@ -8,9 +8,8 @@ app = FastAPI(
     version="1.0.0"
 )
 origins = [
-    "https://localhost:7135", # Origen por defecto de Blazor en desarrollo
+    "https://localhost:7135",
     "http://localhost:5136",
-    # Añade aquí la URL de producción si la tienes
 ]
 app.add_middleware(
     CORSMiddleware,
@@ -23,7 +22,6 @@ app.add_middleware(
 # Inicializamos el motor del chatbot con las FAQs
 engine = ChatbotEngine(faqs_path='faqs.json')
 
-# Definimos el modelo de datos para la pregunta que llegará en el request
 class Query(BaseModel):
     text: str
 
@@ -37,6 +35,3 @@ def read_root():
 def ask_question(query: Query):
     answer = engine.find_best_answer(query.text)
     return {"question": query.text, "answer": answer}
-
-# Para ejecutar localmente sin Docker:
-# Abre una terminal y corre: uvicorn main:app --reload
