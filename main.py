@@ -6,6 +6,18 @@ app = FastAPI(
     title="CatBot API",
     version="1.0.0"
 )
+origins = [
+    "https://localhost:7135", # Origen por defecto de Blazor en desarrollo
+    "http://localhost:5136",
+    # Añade aquí la URL de producción si la tienes
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"], # Permite todos los métodos (GET, POST, etc.)
+    allow_headers=["*"], # Permite todas las cabeceras
+)
 
 # Inicializamos el motor del chatbot con las FAQs
 engine = ChatbotEngine(faqs_path='faqs.json')

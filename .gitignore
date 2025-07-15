@@ -1,0 +1,60 @@
+# Archivos de certificados SSL
+# ¡NUNCA subas tu clave privada a un repositorio!
+key.pem
+cert.pem
+
+# Archivos de entorno virtual
+# Nunca incluyas las dependencias directamente, para eso está requirements.txt
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ficheros de Python compilados y cachés
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+
+# Ficheros de distribución y empaquetado
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ficheros de configuración de IDEs y editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ficheros de registros (logs)
+*.log
+
+# Bases de datos locales
+db.sqlite3
+*.sqlite
+*.sqlite3
+
+# Ficheros de configuración con secretos
+# Es una buena práctica usar variables de entorno para los secretos.
+local_settings.py
+.env
