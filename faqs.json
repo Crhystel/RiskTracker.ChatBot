@@ -13,7 +13,7 @@
   },
   {
     "question": "Adios",
-    "answer": "Chao chiquis"
+    "answer": "¡Hasta luego! Si tienes más dudas, aquí estaré para ayudarte."
   },
   {
     "question": "¿Cómo estás?",
@@ -50,6 +50,14 @@
   {
     "question": "¿Cuál es el objetivo principal de esta metodología?",
     "answer": "El objetivo principal es cuantificar el riesgo de ciberseguridad en términos financieros (USD) para los activos digitales de una organización, con el fin de priorizar riesgos, justificar inversiones y facilitar la toma de decisiones."
+  },
+  {
+    "question": "¿Qué hace esta metodología? ¿De qué trata?",
+    "answer": "Esta metodología traduce el complejo riesgo técnico de la ciberseguridad en un impacto financiero concreto y entendible. En lugar de hablar de vulnerabilidades abstractas, calcula cuánto dinero (en USD) podría perder la organización anualmente por cada uno de sus activos digitales. En resumen, le pone un 'precio' al riesgo."
+  },
+  {
+    "question": "¿Para qué me sirve usar esta metodología? ¿Cuál es su propósito?",
+    "answer": "Principalmente, sirve para tomar decisiones de negocio mucho más inteligentes y estratégicas. Al expresar el riesgo en términos financieros, permite a la dirección: 1) Priorizar objetivamente en qué activos es más urgente invertir en seguridad. 2) Justificar los presupuestos de ciberseguridad con un Retorno de la Inversión (ROSI) claro. Y 3) Comunicar el valor y la importancia de la seguridad en un lenguaje que toda la empresa puede entender."
   },
   {
     "question": "¿Qué es la Pérdida Anual Esperada (ALE) y por qué es importante?",
