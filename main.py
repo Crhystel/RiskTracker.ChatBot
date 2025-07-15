@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from chatbot_engine import ChatbotEngine
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="CatBot API",
@@ -15,8 +16,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"], # Permite todos los métodos (GET, POST, etc.)
-    allow_headers=["*"], # Permite todas las cabeceras
+    allow_methods=["*"],  # Permite todos los métodos (GET, POST, etc.)
+    allow_headers=["*"],  # Permite todas las cabeceras
 )
 
 # Inicializamos el motor del chatbot con las FAQs
